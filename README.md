@@ -192,30 +192,6 @@ LearningPath/
 └── package.json
 ```
 
----
-
-## 🚢 Pushing to Your GitHub
-
-To push this project to your GitHub account:
-
-```bash
-# 1. Initialize git inside the LearningPath folder
-git init
-
-# 2. Add all files (secrets in .env.local are automatically ignored)
-git add .
-
-# 3. Create your initial commit
-git commit -m "Initial commit: LearningPath adaptive learning platform"
-
-# 4. Rename default branch to main
-git branch -M main
-
-# 5. Link your GitHub remote repository (replace with your repo URL)
-git remote add origin https://github.com/your-username/LearningPath.git
-
-# 6. Push to GitHub
-git push -u origin main
 ```
 
 ---
