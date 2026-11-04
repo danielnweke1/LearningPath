@@ -1,0 +1,195 @@
+{
+  "id": "demo_demo-3",
+  "title": "AI Engineer: Systems, Embeddings, RAG & Autonomous Agents",
+  "summary": "A 10-week intensive bridge for software engineers transitioning to building production AI applications, vector retrieval architectures, structured outputs, and eval-driven autonomous agent loops.",
+  "assumptions": [
+    "Assumes solid familiarity with backend APIs (Python or TypeScript) and Git.",
+    "Skips generic programming introductions and dives straight into transformer inference and prompt orchestration.",
+    "Workload structured for 8 hours per week with end-to-end coding assignments."
+  ],
+  "intake": {
+    "goal": "Move from software developer to AI engineer",
+    "speciality": "LLM Orchestration, RAG & Agentic Systems",
+    "growthIntent": "Level up in current area",
+    "currentLevel": "Intermediate",
+    "hoursPerWeek": 8,
+    "targetWeeks": 10,
+    "learningStyle": [
+      "Video-first",
+      "Hands-on projects"
+    ]
+  },
+  "phases": [
+    {
+      "id": "p1",
+      "title": "Phase 1: Transformer Foundations, Tokenization & Prompt Engineering",
+      "goal": "Understand how autoregressive transformers work under the hood and implement deterministic structured outputs.",
+      "project": {
+        "title": "Phase 1 Milestone: Eval-Driven Extraction Engine with JSON Schemas",
+        "brief": "Build a production document extraction pipeline using structured outputs, few-shot prompting, and automated regression evaluations measuring accuracy against a benchmark test set.",
+        "acceptance_criteria": [
+          "100% schema validation compliance across 100 test documents using Zod/Pydantic",
+          "Automated cost and token latency logging per run",
+          "Regression test harness comparing prompt iterations"
+        ],
+        "stretch": "Add synthetic data generation loop to bootstrap domain edge cases."
+      },
+      "weeks": [
+        {
+          "number": 1,
+          "theme": "Week 1: Transformer Architecture & Generative Inference",
+          "sessions": [
+            {
+              "id": "d3_w1_s1",
+              "title": "How Large Language Models Work: Pre-training, Fine-Tuning & RLHF",
+              "objective": "Grasp tokenization mechanics, context windows, sampling parameters (temperature, top_p), and the distinction between base and instruction-tuned models.",
+              "estimated_minutes": 60,
+              "concepts": [
+                "Tokenization",
+                "Attention Mechanism",
+                "Sampling",
+                "System Prompts"
+              ],
+              "search_queries": [
+                "Intro to Large Language Models Andrej Karpathy",
+                "How LLMs work transformer architecture"
+              ],
+              "target_video_minutes_range": "long",
+              "difficulty": "Intermediate",
+              "video": {
+                "videoId": "zjkBMFhNj_g",
+                "title": "Intro to Large Language Models",
+                "channel": "Andrej Karpathy",
+                "duration": "59:45",
+                "durationSeconds": 3585,
+                "thumbnail": "https://i.ytimg.com/vi/zjkBMFhNj_g/hqdefault.jpg",
+                "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
+                "why": "The definitive high-clarity engineering lecture on the entire modern LLM stack by former Tesla AI director.",
+                "views": 2800000
+              },
+              "alternate_video": {
+                "videoId": "aircAruvnKk",
+                "title": "But what is a neural network? | Deep learning, chapter 1",
+                "channel": "3Blue1Brown",
+                "duration": "19:13",
+                "durationSeconds": 1153,
+                "thumbnail": "https://i.ytimg.com/vi/aircAruvnKk/hqdefault.jpg",
+                "url": "https://www.youtube.com/watch?v=aircAruvnKk",
+                "why": "Intuitive geometric and mathematical foundation of matrix weights and activation functions.",
+                "views": 14500000
+              },
+              "checkpoints": [
+                {
+                  "id": "chk_1",
+                  "type": "multiple_choice",
+                  "question": "Why does lowering temperature close to 0 produce more deterministic model output?",
+                  "options": [
+                    "It sharpens the token probability distribution, favoring highest-probability logits",
+                    "It increases context window size",
+                    "It skips self-attention layers entirely",
+                    "It forces the model to use cached responses"
+                  ],
+                  "correctIndex": 0,
+                  "explanation": "Lowering temperature scales down the logits before softmax, concentrating probabilities on the greedy top candidate."
+                },
+                {
+                  "id": "chk_2",
+                  "type": "multiple_choice",
+                  "question": "What is the primary cause of hallucination in autoregressive models?",
+                  "options": [
+                    "Next-token prediction optimizes statistical plausibility rather than ground truth verification",
+                    "GPU hardware floating-point roundoff errors",
+                    "Insufficient RAM allocation on inference hosts",
+                    "Using JSON output format"
+                  ],
+                  "correctIndex": 0,
+                  "explanation": "Autoregressive generation predicts the most plausible continuation given prior tokens without an external verification oracle."
+                },
+                {
+                  "id": "chk_3",
+                  "type": "practical_task",
+                  "question": "Hands-on Verification: Compute token costs and latency",
+                  "options": [
+                    "Measured token consumption and latency using tiktoken/tokenizer",
+                    "Guessed cost based on word count",
+                    "Skipped cost calculation",
+                    "Used unlimited token budget"
+                  ],
+                  "correctIndex": 0,
+                  "taskCriteria": "Calculate token count for a 500-word prompt using BPE tokenizer and compute cost.",
+                  "explanation": "Understanding token economics is critical for AI software architecture."
+                }
+              ]
+            },
+            {
+              "id": "d3_w1_s2",
+              "title": "Building GPT from Scratch: PyTorch Implementation",
+              "objective": "Implement a character-level transformer decoder with multi-head self-attention to master tensor shapes and causal masking.",
+              "estimated_minutes": 75,
+              "concepts": [
+                "Self-Attention",
+                "Causal Masking",
+                "Residual Connections",
+                "LayerNorm"
+              ],
+              "search_queries": [
+                "Lets build GPT Andrej Karpathy",
+                "Transformer self attention code from scratch"
+              ],
+              "target_video_minutes_range": "long",
+              "difficulty": "Advanced",
+              "video": {
+                "videoId": "kCc8FmEb1nY",
+                "title": "Let's build GPT: from scratch, in code, spelled out.",
+                "channel": "Andrej Karpathy",
+                "duration": "1:56:00",
+                "durationSeconds": 6960,
+                "thumbnail": "https://i.ytimg.com/vi/kCc8FmEb1nY/hqdefault.jpg",
+                "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY",
+                "why": "Masterclass breaking down every line of code behind transformer attention mechanisms.",
+                "views": 4100000
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "theme": "Week 2: Embeddings & Vector Retrieval (RAG Foundations)",
+          "sessions": [
+            {
+              "id": "d3_w2_s1",
+              "title": "Dense Vector Embeddings, Chunking Strategies & Cosine Similarity",
+              "objective": "Convert unstructured text into high-dimensional embedding spaces, implement semantic chunking, and benchmark vector search.",
+              "estimated_minutes": 60,
+              "concepts": [
+                "Vector Embeddings",
+                "HNSW Indexing",
+                "Chunking Strategies",
+                "Reranking"
+              ],
+              "search_queries": [
+                "Vector databases explained RAG tutorial",
+                "Embeddings and similarity search full course"
+              ],
+              "target_video_minutes_range": "medium",
+              "difficulty": "Intermediate",
+              "video": {
+                "videoId": "9vM4p9NN0Ts",
+                "title": "Building LLM Applications with Vector Databases & RAG",
+                "channel": "freeCodeCamp.org",
+                "duration": "1:20:15",
+                "durationSeconds": 4815,
+                "thumbnail": "https://i.ytimg.com/vi/9vM4p9NN0Ts/hqdefault.jpg",
+                "url": "https://www.youtube.com/watch?v=9vM4p9NN0Ts",
+                "why": "Practical implementation of embedding generation, ingestion into vector stores, and prompt context stuffing.",
+                "views": 320000
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-11-04T09:13:39.515Z",
+  "isDemo": true
+}

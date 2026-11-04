@@ -1,0 +1,196 @@
+{
+  "id": "demo_demo-2",
+  "title": "Python for Data Analysis: Zero to Practical Insights",
+  "summary": "An 8-week foundational roadmap designed for beginners to confidently clean, transform, analyze, and visualize real-world datasets with Python, NumPy, Pandas, and Seaborn.",
+  "assumptions": [
+    "No previous programming background required.",
+    "Workload structured for 5 hours per week with immediate interactive notebook exercises.",
+    "Focuses on practical tabular data operations, missing value handling, and exploratory data analysis (EDA)."
+  ],
+  "intake": {
+    "goal": "Learn Python for data analysis",
+    "speciality": "Business Analytics & Tabular Data",
+    "growthIntent": "Start from zero",
+    "currentLevel": "Beginner",
+    "hoursPerWeek": 5,
+    "targetWeeks": 8,
+    "learningStyle": [
+      "Video-first",
+      "Hands-on projects"
+    ]
+  },
+  "phases": [
+    {
+      "id": "p1",
+      "title": "Phase 1: Python Fundamentals & Data Structures",
+      "goal": "Master Python syntax, collections (lists, dictionaries, sets), and vectorized numerical computation with NumPy.",
+      "project": {
+        "title": "Phase 1 Milestone: Multi-Source Sales Transaction Analyzer",
+        "brief": "Write a Python script that ingests multiple messy CSV files, parses date strings, cleans invalid currencies, and computes statistical summaries using NumPy arrays.",
+        "acceptance_criteria": [
+          "Handles corrupted rows without throwing uncaught exceptions",
+          "Computes mean, median, standard deviation, and percentiles for revenue",
+          "Outputs a formatted summary report to stdout and clean CSV"
+        ],
+        "stretch": "Benchmark performance difference between Python loops and vectorized NumPy operations."
+      },
+      "weeks": [
+        {
+          "number": 1,
+          "theme": "Week 1: Python Environment & Core Primitives",
+          "sessions": [
+            {
+              "id": "d2_w1_s1",
+              "title": "Python Basics, Control Flow & Data Types",
+              "objective": "Install Jupyter Notebooks, write foundational Python variables, conditional statements, and loops for data processing.",
+              "estimated_minutes": 50,
+              "concepts": [
+                "Variables",
+                "Data Types",
+                "Conditionals",
+                "Loops",
+                "Functions"
+              ],
+              "search_queries": [
+                "Python for beginners full course freecodecamp",
+                "Python variables loops tutorial"
+              ],
+              "target_video_minutes_range": "long",
+              "difficulty": "Beginner",
+              "video": {
+                "videoId": "r-uOLxNrNk8",
+                "title": "Python for Data Analysis - Full Course for Beginners",
+                "channel": "freeCodeCamp.org",
+                "duration": "4:24:00",
+                "durationSeconds": 15840,
+                "thumbnail": "https://i.ytimg.com/vi/r-uOLxNrNk8/hqdefault.jpg",
+                "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8",
+                "why": "Clear pacing starting from installation through practical functions, structured specifically for data learners.",
+                "views": 1250000
+              },
+              "alternate_video": {
+                "videoId": "GPVsHOlRBBI",
+                "title": "Data Analysis with Python Course",
+                "channel": "freeCodeCamp.org",
+                "duration": "4:15:30",
+                "durationSeconds": 15330,
+                "thumbnail": "https://i.ytimg.com/vi/GPVsHOlRBBI/hqdefault.jpg",
+                "url": "https://www.youtube.com/watch?v=GPVsHOlRBBI",
+                "why": "Thorough visual breakdown of computational concepts in Jupyter Notebook.",
+                "views": 890000
+              },
+              "checkpoints": [
+                {
+                  "id": "chk_1",
+                  "type": "multiple_choice",
+                  "question": "Which Python data structure is unordered, mutable, and stores key-value pairs?",
+                  "options": [
+                    "List",
+                    "Dictionary",
+                    "Tuple",
+                    "String"
+                  ],
+                  "correctIndex": 1,
+                  "explanation": "Dictionaries store key-value associations and allow constant-time O(1) lookups."
+                },
+                {
+                  "id": "chk_2",
+                  "type": "multiple_choice",
+                  "question": "What is the primary difference between a list and a tuple in Python?",
+                  "options": [
+                    "Lists are mutable while tuples are immutable",
+                    "Tuples can only store integers",
+                    "Lists cannot be sliced",
+                    "There is no difference in behavior"
+                  ],
+                  "correctIndex": 0,
+                  "explanation": "Tuples cannot be altered once instantiated (immutable), making them safe for static records."
+                },
+                {
+                  "id": "chk_3",
+                  "type": "practical_task",
+                  "question": "Hands-on Verification: Write a function calculating filtered sum",
+                  "options": [
+                    "Implemented function with list comprehension and verified with sample inputs",
+                    "Used a manual calculator",
+                    "Skipped test run",
+                    "Relied on hardcoded return value"
+                  ],
+                  "correctIndex": 0,
+                  "taskCriteria": "Write a function `sum_positives(numbers)` returning sum of all numbers > 0.",
+                  "explanation": "Validates functional comprehension of loops and conditionals."
+                }
+              ]
+            },
+            {
+              "id": "d2_w1_s2",
+              "title": "Vectorized Numerical Computing with NumPy",
+              "objective": "Create multidimensional arrays, perform mathematical slicing, and utilize boolean indexing.",
+              "estimated_minutes": 50,
+              "concepts": [
+                "NumPy ndarray",
+                "Broadcasting",
+                "Vectorization",
+                "Boolean Masking"
+              ],
+              "search_queries": [
+                "NumPy full tutorial for beginners",
+                "NumPy array broadcasting explained"
+              ],
+              "target_video_minutes_range": "medium",
+              "difficulty": "Beginner",
+              "video": {
+                "videoId": "daefaLgNkw0",
+                "title": "NumPy Full Course - Python NumPy Tutorial",
+                "channel": "freeCodeCamp.org",
+                "duration": "58:12",
+                "durationSeconds": 3492,
+                "thumbnail": "https://i.ytimg.com/vi/daefaLgNkw0/hqdefault.jpg",
+                "url": "https://www.youtube.com/watch?v=daefaLgNkw0",
+                "why": "Teaches vectorization and array indexing without overwhelming mathematical jargon.",
+                "views": 450000
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "theme": "Week 2: Data Wrangling with Pandas",
+          "sessions": [
+            {
+              "id": "d2_w2_s1",
+              "title": "DataFrames, Series, and Data Ingestion",
+              "objective": "Load CSV/Excel files into Pandas, inspect head/tail/info, and perform column selections.",
+              "estimated_minutes": 50,
+              "concepts": [
+                "DataFrame",
+                "Series",
+                "read_csv",
+                "loc and iloc"
+              ],
+              "search_queries": [
+                "Pandas tutorial Corey Schafer",
+                "Pandas DataFrame basics Python"
+              ],
+              "target_video_minutes_range": "medium",
+              "difficulty": "Beginner",
+              "video": {
+                "videoId": "LHBE6Q9XlzI",
+                "title": "Python Pandas Tutorial: Getting Started with DataFrames",
+                "channel": "Corey Schafer",
+                "duration": "18:24",
+                "durationSeconds": 1104,
+                "thumbnail": "https://i.ytimg.com/vi/LHBE6Q9XlzI/hqdefault.jpg",
+                "url": "https://www.youtube.com/watch?v=LHBE6Q9XlzI",
+                "why": "Standard gold-standard instructional series on DataFrame mechanics.",
+                "views": 780000
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-11-04T09:13:39.515Z",
+  "isDemo": true
+}
