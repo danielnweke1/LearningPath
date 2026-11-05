@@ -22,7 +22,6 @@ Self-directed online learning is often fragmented: scattered YouTube tutorials, 
 2. 🎥 **Zero Hallucinated Links**: Every session is anchored to real, highly-rated YouTube video lectures scored for duration fit, recency, and concept overlap.
 3. 🧠 **GPT-4o Theoretical Treatises**: Deep theoretical notes, mental models, code blueprints, and interactive checkpoint quizzes for every session.
 4. 📌 **Synchronized Video Dock**: A sticky video player that tracks your focal reading position down the timeline in real time.
-5. 🔄 **Adaptive Surgical Replanning**: Mark any session *"Too easy"*, *"Too hard"*, or *"I'm stuck"* to trigger a dynamic JSON patch that recalibrates future weeks without losing completed work.
 
 ---
 
