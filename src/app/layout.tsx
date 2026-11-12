@@ -39,7 +39,10 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} ${newsreader.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-[var(--bg)] text-[var(--ink)] font-sans antialiased selection:bg-[var(--accent-soft)] selection:text-[var(--ink)]">
+      <body
+        suppressHydrationWarning
+        className="min-h-full bg-[var(--bg)] text-[var(--ink)] font-sans antialiased selection:bg-[var(--accent-soft)] selection:text-[var(--ink)]"
+      >
         {children}
       </body>
     </html>
